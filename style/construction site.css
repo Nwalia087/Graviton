@@ -20,6 +20,16 @@ li {
 .fa {
   padding: 0 5px;
 }
+#mouseAnimation {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background-color: #f45b1e;
+  border-radius: 50%;
+  translate: -50% -50%;
+  z-index: 200;
+  pointer-events: none;
+}
 .mainNavbar .row {
   align-items: center;
   padding: 20px 10px 20px 20px;
@@ -254,7 +264,7 @@ li {
 }
 .landingContent {
   background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    url("images/luke-besley-k5l-zbRSPds-unsplash.jpg");
+    url("../images/luke-besley-k5l-zbRSPds-unsplash.jpg");
   background-size: cover;
   height: 92vh;
   color: white;
@@ -370,7 +380,7 @@ li {
   margin: 0px 20px;
   display: flex;
   flex-direction: column;
-  background-image: url("images/ricardo-gomez-angel-NsUpK4DgG-0-unsplash.jpg");
+  background-image: url("../images/ricardo-gomez-angel-NsUpK4DgG-0-unsplash.jpg");
 }
 .experience {
   display: flex;
@@ -469,7 +479,7 @@ li {
 }
 .joinUS {
   position: absolute;
-  background-image: url(images/Screenshot\ 2024-02-21\ 130440.png);
+  background-image: url(/images/Screenshot\ 2024-02-21\ 130440.png);
   background-size: cover;
   height: 265px;
   width: 520px;
@@ -489,11 +499,20 @@ li {
   padding: 20px;
   width: 59.2px;
   margin: 20px 0;
+  transition: 200ms ease-in-out;
+}
+.joinUS > div > div:hover {
+  background: black;
+  color: white;
+}
+.joinUS > div > div:hover i {
+  rotate: 0deg;
 }
 .joinUS i {
   translate: 2px;
   rotate: -45deg;
   padding: 0%;
+  transition: 200ms ease-in-out;
 }
 .experience > .col:nth-of-type(1) > div:nth-of-type(1) {
   height: 60vh;
@@ -508,7 +527,7 @@ li {
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.8)
     ),
-    url("images/sumner-mahaffey-7Y0NshQLohk-unsplash.png");
+    url("../images/sumner-mahaffey-7Y0NshQLohk-unsplash.png");
   background-size: cover;
   margin-top: 150px;
 }
@@ -911,7 +930,7 @@ li {
   width: 100% !important;
 }
 .whyChooseUS > .col:nth-of-type(1) {
-  background-image: url(images/bg-left.png);
+  background-image: url(/images/bg-left.png);
 }
 .whyChooseUS > div > img {
   width: 33vw;
@@ -1097,22 +1116,22 @@ li {
   background-position: center;
 }
 .ourProjects .card:nth-of-type(1) {
-  background-image: url(images/mySlides_2-1.jpg);
+  background-image: url(/images/mySlides_2-1.jpg);
 }
 .ourProjects .card:nth-of-type(2) {
-  background-image: url(images/mySlides_2-2.jpg);
+  background-image: url(/images/mySlides_2-2.jpg);
 }
 .ourProjects .card:nth-of-type(3) {
-  background-image: url(images/mySlides_2-3.jpg);
+  background-image: url(/images/mySlides_2-3.jpg);
 }
 .ourProjects .card:nth-of-type(4) {
-  background-image: url(images/mySlides_2-4.jpg);
+  background-image: url(/images/mySlides_2-4.jpg);
 }
 .ourProjects .card:nth-of-type(5) {
-  background-image: url(images/mySlides_2-5.jpg);
+  background-image: url(/images/mySlides_2-5.jpg);
 }
 .ourProjects .card:nth-of-type(6) {
-  background-image: url(images/mySlides_2-6.jpg);
+  background-image: url(/images/mySlides_2-6.jpg);
 }
 .ourProjects .slide-container {
   width: 900px;
@@ -1413,7 +1432,7 @@ li {
   text-transform: capitalize;
 }
 .contactUS {
-  background-image: url(images/madhav-rueJ4kKejRI-unsplash.jpg);
+  background-image: url(/images/madhav-rueJ4kKejRI-unsplash.jpg);
   background-position: center;
   background-size: cover;
   margin-top: 32vh;
@@ -1464,7 +1483,7 @@ li {
   color: #6c6c6c;
 }
 .contactUS > .row:nth-of-type(2) > .col {
-  background-image: url(images/nikhil-fHOc-5r6LMg-unsplash.jpg);
+  background-image: url(/images/nikhil-fHOc-5r6LMg-unsplash.jpg);
   margin: 6vh 1vw;
   font-size: 21px;
   color: white;
@@ -1862,7 +1881,7 @@ li {
 }
 
 .footer {
-  background-image: url(images/footer\ img.jpg);
+  background-image: url(/images/footer\ img.jpg);
   background-size: 150%;
   background-position: -600px 00px;
 }
