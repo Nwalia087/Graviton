@@ -61,12 +61,13 @@
     <title>construction</title>
   </head>
   <body>
+    <div id="mouseAnimation"></div>
     <div class="mainNavbar">
       <div class="row">
         <div class="contactDetails">
           <ul>
             <li>
-              <a href="tel:+18091206705"
+              <a class="interactable" href="tel:+18091206705"
                 ><i class="fa fa-phone" aria-hidden="true"></i>+18091206705</a
               >
             </li>
@@ -2180,6 +2181,34 @@
           },
         },
       });
+    </script>
+    <script>
+      const mousetrail = document.querySelector("#mouseAnimation");
+
+      let mouseX = 0;
+      let mouseY = 0;
+
+      window.addEventListener("mousemove", function (event) {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+        updateMousetrail();
+      });
+
+      window.addEventListener("scroll", function () {
+        updateMousetrail();
+      });
+      let scrollTimeout;
+
+      function updateMousetrail() {
+        mousetrail.style.left = mouseX + window.scrollX + "px";
+        mousetrail.style.top = mouseY + window.scrollY + "px";
+        const hoveredElement = event.target;
+        if (hoveredElement.classList.contains("interactable")) {
+          mousetrail.classList.add("hovered"); // Add a class for hover style
+        } else {
+          mousetrail.classList.remove("hovered"); // Remove hover class if not hovering an interactable element
+        }
+      }
     </script>
   </body>
 </html>
