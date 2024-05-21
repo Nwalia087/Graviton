@@ -58,9 +58,10 @@
     />
     <link rel="stylesheet" href="style/construction site.css" />
 
-    <title>construction</title>
+    <title>GRAVITON</title>
   </head>
   <body>
+    <div id="loader"></div>
     <div id="mouseAnimation"></div>
     <div class="mainNavbar">
       <div class="row">
@@ -113,7 +114,7 @@
               onclick="activeLi(0)"
             >
               home<i class="fa fa-angle-down" aria-hidden="true"></i>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-home">
                 <li class="dropdown-menu-item">
                   <div class="liBullets"></div>
                   <span>home 01</span>
@@ -138,7 +139,7 @@
             </li>
             <li class="secondNavbarLi dropdown-trigger" onclick="activeLi(1)">
               pages<i class="fa fa-angle-down" aria-hidden="true"></i>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-pages">
                 <li class="dropdown-menu-item nestedLi">
                   <div class="liBullets"></div>
                   <span class="dropdown-trigger companyUl"
@@ -236,7 +237,7 @@
             </li>
             <li class="secondNavbarLi dropdown-trigger" onclick="activeLi(2)">
               services<i class="fa fa-angle-down" aria-hidden="true"></i>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-services">
                 <li class="dropdown-menu-item">
                   <div class="liBullets"></div>
                   <span>our service</span>
@@ -249,7 +250,7 @@
             </li>
             <li class="secondNavbarLi dropdown-trigger" onclick="activeLi(3)">
               projects<i class="fa fa-angle-down" aria-hidden="true"></i>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-projects">
                 <li class="dropdown-menu-item">
                   <div class="liBullets"></div>
                   <span>project style 01</span>
@@ -274,7 +275,7 @@
             </li>
             <li class="secondNavbarLi dropdown-trigger" onclick="activeLi(4)">
               blog<i class="fa fa-angle-down" aria-hidden="true"></i>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-blog">
                 <li class="dropdown-menu-item">
                   <div class="liBullets"></div>
                   <span>blog standard</span>
@@ -2183,8 +2184,20 @@
       });
     </script>
     <script>
-      const mousetrail = document.querySelector("#mouseAnimation");
+      const loader = document.querySelector("#loader");
+      if (loader) {
+        document.body.style.overflow = "hidden"; // Disable scrolling initially
 
+        setTimeout(() => {
+          loader.style.opacity = "0"; // Start fading out the loader
+        }, 2000);
+
+        setTimeout(() => {
+          loader.style.display = "none"; // Hide the loader after fade out
+          document.body.style.overflow = "visible"; // Re-enable scrolling
+        }, 2500);
+      }
+      const mousetrail = document.querySelector("#mouseAnimation");
       let mouseX = 0;
       let mouseY = 0;
 
@@ -2196,6 +2209,7 @@
 
       window.addEventListener("scroll", function () {
         updateMousetrail();
+        loader.style.top = +window.scrollY + "px";
       });
       let scrollTimeout;
 
@@ -2203,11 +2217,11 @@
         mousetrail.style.left = mouseX + window.scrollX + "px";
         mousetrail.style.top = mouseY + window.scrollY + "px";
         const hoveredElement = event.target;
-        if (hoveredElement.classList.contains("interactable")) {
+       /*  if (hoveredElement.classList.contains("interactable")) {
           mousetrail.classList.add("hovered"); // Add a class for hover style
         } else {
           mousetrail.classList.remove("hovered"); // Remove hover class if not hovering an interactable element
-        }
+        } */
       }
     </script>
   </body>
