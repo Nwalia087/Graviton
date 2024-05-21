@@ -20,6 +20,19 @@ li {
 .fa {
   padding: 0 5px;
 }
+#loader {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 10;
+  background-image: url(/images/Eclipse@1x-1.0s-200px-200px.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity 500ms ease-in-out;
+  opacity: 1;
+  display: block;
+}
 #mouseAnimation {
   position: absolute;
   height: 8px;
@@ -136,14 +149,25 @@ li {
   display: none;
   opacity: 0;
   transition: opacity 0.5s ease;
-
   text-align: right;
   position: absolute;
-  top: 90px;
-  right: -140px;
+  top: 87px;
+  right: -233px;
   width: 200px;
+  translate: -50%;
 }
-
+.secondaryNavbar .dropdown-menu-pages {
+  right: -234px;
+}
+.secondaryNavbar .dropdown-menu-services {
+  right: -213px;
+}
+.secondaryNavbar .dropdown-menu-projects {
+  right: -215px;
+}
+.secondaryNavbar .dropdown-menu-blog {
+  right: -246px;
+}
 .dropdown-trigger:hover > .dropdown-menu {
   display: block;
   opacity: 1;
@@ -206,7 +230,7 @@ li {
 }
 .companyUl .nestedUl {
   top: 0px;
-  left: 200px;
+  left: 300px;
 }
 .dropdown-menu li span {
   transition: 200ms ease-in-out;
