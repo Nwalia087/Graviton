@@ -26,7 +26,7 @@ li {
   height: 100vh;
   background: white;
   z-index: 10;
-  background-image: URL(images/Eclipse@1x-1.0s-200px-200px.gif);
+  background-image: URL(../images/Eclipse@1x-1.0s-200px-200px.gif);
   background-repeat: no-repeat;
   background-position: center;
   transition: opacity 500ms ease-in-out;
@@ -288,7 +288,7 @@ li {
 }
 .landingContent {
   background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    URL(images/luke-besley-k5l-zbRSPds-unsplash.jpg);
+    URL(.//images/luke-besley-k5l-zbRSPds-unsplash.jpg);
   background-size: cover;
   height: 92vh;
   color: white;
@@ -404,7 +404,7 @@ li {
   margin: 0px 20px;
   display: flex;
   flex-direction: column;
-  background-image: url(images/ricardo-gomez-angel-NsUpK4DgG-0-unsplash.jpg);
+  background-image: URL(.//images/ricardo-gomez-angel-NsUpK4DgG-0-unsplash.jpg);
 }
 .experience {
   display: flex;
@@ -503,7 +503,7 @@ li {
 }
 .joinUS {
   position: absolute;
-  background-image: URL(images/Screenshot 2024-02-21 130440.png);
+  background-image: URL(.//images/Screenshot 2024-02-21 130440.png);
   background-size: cover;
   height: 265px;
   width: 520px;
@@ -551,7 +551,7 @@ li {
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.8)
     ),
-    url(images/sumner-mahaffey-7Y0NshQLohk-unsplash.png);
+    URL(.//images/sumner-mahaffey-7Y0NshQLohk-unsplash.png);
   background-size: cover;
   margin-top: 150px;
 }
@@ -954,7 +954,7 @@ li {
   width: 100% !important;
 }
 .whyChooseUS > .col:nth-of-type(1) {
-  background-image: url(images/bg-left.png);
+  background-image: URL(.//images/bg-left.png);
 }
 .whyChooseUS > div > img {
   width: 33vw;
@@ -1140,22 +1140,22 @@ li {
   background-position: center;
 }
 .ourProjects .card:nth-of-type(1) {
-  background-image: url(/images/mySlides_2-1.jpg);
+  background-image: URL(../images/mySlides_2-1.jpg);
 }
 .ourProjects .card:nth-of-type(2) {
-  background-image: url(/images/mySlides_2-2.jpg);
+  background-image: URL(../images/mySlides_2-2.jpg);
 }
 .ourProjects .card:nth-of-type(3) {
-  background-image: url(/images/mySlides_2-3.jpg);
+  background-image: URL(../images/mySlides_2-3.jpg);
 }
 .ourProjects .card:nth-of-type(4) {
-  background-image: url(/images/mySlides_2-4.jpg);
+  background-image: URL(../images/mySlides_2-4.jpg);
 }
 .ourProjects .card:nth-of-type(5) {
-  background-image: url(/images/mySlides_2-5.jpg);
+  background-image: URL(../images/mySlides_2-5.jpg);
 }
 .ourProjects .card:nth-of-type(6) {
-  background-image: url(/images/mySlides_2-6.jpg);
+  background-image: URL(../images/mySlides_2-6.jpg);
 }
 .ourProjects .slide-container {
   width: 900px;
@@ -1456,7 +1456,7 @@ li {
   text-transform: capitalize;
 }
 .contactUS {
-  background-image: url(/images/madhav-rueJ4kKejRI-unsplash.jpg);
+  background-image: URL(../images/madhav-rueJ4kKejRI-unsplash.jpg);
   background-position: center;
   background-size: cover;
   margin-top: 32vh;
@@ -1507,7 +1507,7 @@ li {
   color: #6c6c6c;
 }
 .contactUS > .row:nth-of-type(2) > .col {
-  background-image: url(/images/nikhil-fHOc-5r6LMg-unsplash.jpg);
+  background-image: URL(../images/nikhil-fHOc-5r6LMg-unsplash.jpg);
   margin: 6vh 1vw;
   font-size: 21px;
   color: white;
