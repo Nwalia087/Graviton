@@ -288,7 +288,7 @@ li {
 }
 .landingContent {
   background-image: radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
-    URL(.//images/luke-besley-k5l-zbRSPds-unsplash.jpg);
+    URL(../images/luke-besley-k5l-zbRSPds-unsplash.jpg);
   background-size: cover;
   height: 92vh;
   color: white;
@@ -551,7 +551,7 @@ li {
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.8)
     ),
-    URL(.//images/sumner-mahaffey-7Y0NshQLohk-unsplash.png);
+    URL(../images/sumner-mahaffey-7Y0NshQLohk-unsplash.png);
   background-size: cover;
   margin-top: 150px;
 }
