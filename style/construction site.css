@@ -404,7 +404,7 @@ li {
   margin: 0px 20px;
   display: flex;
   flex-direction: column;
-  background-image: url("../images/ricardo-gomez-angel-NsUpK4DgG-0-unsplash.jpg");
+  background-image: url(images/ricardo-gomez-angel-NsUpK4DgG-0-unsplash.jpg);
 }
 .experience {
   display: flex;
