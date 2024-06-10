@@ -503,7 +503,7 @@ li {
 }
 .joinUS {
   position: absolute;
-  background-image: URL(../images/Screenshot 2024-02-21 130440.png);
+  background-image: URL('https://github.com/Nwalia087/Graviton/blob/5f49e09d43a2f399f069cbfe6e2233d86c412650/images/Screenshot%202024-02-21%20130440.png');
   background-size: cover;
   height: 265px;
   width: 520px;
